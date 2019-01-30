@@ -1,0 +1,24 @@
+{
+  "name": "coursera",
+  "version": "1.0.0",
+  "description": "Peer-graded Assignment: Assignment 1: Node Modules, Express and REST API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uttsap/Server-side-Development-with-NodeJS-Express-and-MongoDB.git"
+  },
+  "author": "Uttam Sapkota",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uttsap/Server-side-Development-with-NodeJS-Express-and-MongoDB/issues"
+  },
+  "homepage": "https://github.com/uttsap/Server-side-Development-with-NodeJS-Express-and-MongoDB#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  }
+}
