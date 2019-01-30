@@ -17,12 +17,20 @@ leaderRouter.post('/',(req,res,next)=>{
     res.end('This route will add: '+ req.body.leaderName + 'with its description' + req.body.description);
 })
 
+leaderRouter.put('/',(req,res,next)=>{
+    res.status(403).json({message:'this route doesnot support put'});
+})
+
 leaderRouter.delete('/',(req,res,next)=>{
     res.end("This router will delete all leaders");
 })
 
 leaderRouter.get('/:leaderId',(req,res,next)=>{
     res.end('This route send details of the leader: ' + req.params.leaderId + ' to you!');
+})
+
+leaderRouter.post('/:leaderId',(req,res,next)=>{
+    res.status(403).json({message:'this route doesnot support put'});
 })
 
 leaderRouter.put('/:leaderId',(req,res,next)=>{

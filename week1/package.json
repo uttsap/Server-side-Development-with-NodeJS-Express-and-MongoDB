@@ -2,9 +2,9 @@
   "name": "coursera",
   "version": "1.0.0",
   "description": "Peer-graded Assignment: Assignment 1: Node Modules, Express and REST API",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",

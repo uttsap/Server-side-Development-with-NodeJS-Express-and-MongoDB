@@ -17,15 +17,23 @@ promoRouter.post('/',(req,res,next)=>{
     res.end('This route will add: '+ req.body.promotionName + 'with its description' + req.body.description);
 })
 
+promoRouter.put('/',(req,res,next)=>{
+    res.status(403).json({message:'this route doesnot support put'});
+})
+
 promoRouter.delete('/',(req,res,next)=>{
     res.end("This router will delete all ");
 })
 
-promoRouter.get('/:promotionId',(req,res,next)=>{
+promoRouter.get('/:promoId',(req,res,next)=>{
     res.end('This route send details of the promotion: ' + req.params.promoId + ' to you!');
 })
 
-promoRouter.put('/:promotionId',(req,res,next)=>{
+promoRouter.post('/:promoId',(req,res,next)=>{
+    res.status(403).json({message:'this route doesnot support put'});
+})
+
+promoRouter.put('/:promoId',(req,res,next)=>{
     res.write('Updating the promotion: ' + req.params.promoId + '\n');
     res.end('Will update the promotion: ' + req.body.name +
         ' with details: ' + req.body.description);
